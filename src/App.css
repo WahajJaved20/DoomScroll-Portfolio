@@ -3,7 +3,22 @@
   src: local("Billabong"),
     url("./Fonts/Billabong.otf") format("truetype");
 }
+@font-face {
+  font-family: "InstagramSansBold";   
+  src: local("InstagramSansBold"),
+    url("./Fonts/Instagram\ Sans\ Bold.ttf") format("truetype");
+}
 
 .font-Billabong {
   font-family: 'Billabong', sans-serif;
 }
+.font-InstagramSansBold{
+  font-family: 'InstagramSansBold', sans-serif;
+}
+.innerAvatar {
+  border: 5px solid #1f6feb;
+  border-radius: 100%;
+  margin:4px
+}
+
+

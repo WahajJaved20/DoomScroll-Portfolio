@@ -6,9 +6,18 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundColor:{
+        verifiedBlue: "#1f6feb",
+        verifiedGreen: "#68BE60",
+        verifiedRed: "#ff2a04"
+      },
       fontFamily: {
         Billabong: ['Billabong', 'sans-serif'],
+        InstagramSansBold: ['InstagramSansBold', 'sans-serif']
       },
+      textColor:{
+        "sidebarText" : "#68BE60"
+      }
     },
   },
   plugins: [],
