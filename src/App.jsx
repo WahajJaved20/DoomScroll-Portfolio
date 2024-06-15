@@ -21,17 +21,21 @@ function App() {
   };
   if (init) {
     return (
+      <>
+      <HomePage />
+
       <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={particlesOptions}
       />
+      </>
     );
   }
 
   return (
     <>
-      {/* <HomePage /> */}
+      <HomePage />
     </>
   )
 }

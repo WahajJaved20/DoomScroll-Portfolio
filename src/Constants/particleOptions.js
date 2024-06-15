@@ -24,13 +24,13 @@ const particlesOptions = {
     },
     particles: {
       color: {
-        value: "#ffffff",
+        value: "#68BE60",
       },
       links: {
-        color: "#ffffff",
+        color: "#68BE60",
         distance: 180,
         enable: true,
-        opacity: 0.8,
+        opacity: 1,
         width: 1,
       },
       move: {
@@ -50,7 +50,7 @@ const particlesOptions = {
         value: 80,
       },
       opacity: {
-        value: 0.5,
+        value: 0.8,
       },
       shape: {
         type: "circle",
