@@ -16,6 +16,7 @@ export default {
         InstagramSansBold: ['InstagramSansBold', 'sans-serif']
       },
       textColor:{
+        "verifiedBlue": "#1f6feb",
         "sidebarText" : "#68BE60"
       }
     },

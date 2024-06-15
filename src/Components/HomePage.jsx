@@ -3,7 +3,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import { profilePicture, verifiedBadge } from "../assets";
 import { githubStats } from "../Constants/githubStats";
-
+import Typewriter from "typewriter-effect";
 function HomePage() {
     return <>
         <Grid container className="">
@@ -19,7 +19,7 @@ function HomePage() {
                     <Grid container xs={6} sx={{ alignItems: "center" }}>
                         <Grid container direction={"row"} sx={{ alignItems: "center" }} spacing={1} >
                             <Grid item>
-                                <h1 className="font-InstagramSansBold text-2xl text-white">Wahaj Javed</h1>
+                                <h1 className="font-InstagramSansBold font-bold text-2xl text-white">Wahaj Javed</h1>
                             </Grid>
                             <Grid item>
                                 <img src={verifiedBadge} />
@@ -31,19 +31,32 @@ function HomePage() {
                                 <button className="text-white font-InstagramSansBold bg-verifiedRed px-2 rounded-md">Going Super Saiyan 😶‍🌫️</button>
                             </Grid>
                         </Grid>
-                        <Grid container direction={"row"} sx={{ alignItems: "center", marginTop: "20px", alignContent:"center" }} >
-                            <Stack   direction={"row"} sx={{ alignItems: "center" }}>
-                                    <h1 className="font-InstagramSansBold font-bold text-xl text-white">{githubStats.followers}</h1>
-                                    <h1 className="font-InstagramSansBold text-lg text-white ml-2">Followers</h1>
+                        <Grid container direction={"row"} sx={{ alignItems: "center", marginTop: "20px", alignContent: "center" }} >
+                            <Stack direction={"row"} sx={{ alignItems: "center" }}>
+                                <h1 className="font-InstagramSansBold font-bold text-xl text-white">{githubStats.followers}</h1>
+                                <h1 className="font-InstagramSansBold text-lg text-white ml-2">Followers</h1>
                             </Stack>
-                            <Stack  direction={"row"} sx={{ alignItems: "center", marginLeft:"30px"}}>
-                                    <h1 className="font-InstagramSansBold font-bold text-xl text-white">{githubStats.stars}</h1>
-                                    <h1 className="font-InstagramSansBold text-lg text-white ml-2">Stars</h1>
+                            <Stack direction={"row"} sx={{ alignItems: "center", marginLeft: "30px" }}>
+                                <h1 className="font-InstagramSansBold font-bold text-xl text-white">{githubStats.stars}</h1>
+                                <h1 className="font-InstagramSansBold text-lg text-white ml-2">Stars</h1>
                             </Stack>
-                            <Stack  direction={"row"} sx={{ alignItems: "center", marginLeft:"30px"}}>
-                                    <h1 className="font-InstagramSansBold font-bold text-xl text-white">{githubStats.pullRequests}</h1>
-                                    <h1 className="font-InstagramSansBold text-lg text-white ml-2">Pull Requests</h1>
+                            <Stack direction={"row"} sx={{ alignItems: "center", marginLeft: "30px" }}>
+                                <h1 className="font-InstagramSansBold font-bold text-xl text-white">{githubStats.pullRequests}</h1>
+                                <h1 className="font-InstagramSansBold text-lg text-white ml-2">Pull Requests</h1>
                             </Stack>
+                        </Grid>
+                        <Grid item sx={{ marginTop: "20px" }}>
+                            <div className="text-verifiedBlue font-bold text-xl">
+                                <Typewriter className="text-white"
+                                    options={{ loop: true }}
+                                    onInit={(typewriter) => {
+                                        typewriter
+                                            .typeString("Guess we both like to DoomScroll huh???")
+                                            .pauseFor(1000)
+                                            .start();
+                                    }}
+                                />
+                            </div>
                         </Grid>
                     </Grid>
                 </Grid>
