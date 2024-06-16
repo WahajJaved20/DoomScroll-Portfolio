@@ -8,7 +8,7 @@ function Sidebar() {
     const [certificateIcon, setCertificateIcon] = useState(certificate)
     const [socialIcon, setSocialIcon] = useState(social);
     return <>
-        <h1 className="font-Billabong text-white font-bold text-5xl hover:text-sidebarText">{"< Wahaj Javed />"}</h1>
+        <h1 className="font-Billabong text-white font-bold text-3xl lg:text-5xl hover:text-sidebarText">{"< Wahaj Javed />"}</h1>
         <Stack
             direction="column"
             divider={<Divider orientation="vertical" flexItem />}
@@ -18,29 +18,29 @@ function Sidebar() {
             <Stack direction="row" sx={{ alignContent: "center", alignItems: "center" }} className="hover:text-sidebarText"
                 onMouseEnter={() => { setProjectIcon(codeHover) }} onMouseLeave={() => { setProjectIcon(code) }}
             >
-                <img src={projectIcon} className="h-12 w-12 mr-4" ></img>
-                <h1 className="font-InstagramSansBold text-2xl hover:shadow-lg">Projects</h1>
+                <img src={projectIcon} className="h-8 w-8 lg:h-12 lg:w-12 mr-4" ></img>
+                <h1 className="font-InstagramSansBold text-xl lg:text-2xl hover:shadow-lg">Projects</h1>
 
             </Stack>
             <Stack direction="row" sx={{ alignContent: "center", alignItems: "center" }} className="hover:text-sidebarText"
                 onMouseEnter={() => { setExperienceIcon(globeHover) }} onMouseLeave={() => { setExperienceIcon(globe) }}
             >
-                <img src={experienceIcon} className="h-10 w-10 mr-4" ></img>
-                <h1 className="font-InstagramSansBold text-2xl hover:shadow-lg">Experience</h1>
+                <img src={experienceIcon} className="h-8 w-8 lg:h-12 lg:w-12 mr-4" ></img>
+                <h1 className="font-InstagramSansBold text-xl lg:text-2xl hover:shadow-lg">Experience</h1>
 
             </Stack>
             <Stack direction="row" sx={{ alignContent: "center", alignItems: "center" }} className="hover:text-sidebarText"
                 onMouseEnter={() => { setCertificateIcon(certificateHover) }} onMouseLeave={() => { setCertificateIcon(certificate) }}
             >
-                <img src={certificateIcon} className="h-10 w-10 mr-4" ></img>
-                <h1 className="font-InstagramSansBold text-2xl hover:shadow-lg">Certifications</h1>
+                <img src={certificateIcon} className="h-8 w-8 lg:h-12 lg:w-12 mr-4" ></img>
+                <h1 className="font-InstagramSansBold text-xl lg:text-2xl hover:shadow-lg">Certifications</h1>
 
             </Stack>
             <Stack direction="row" sx={{ alignContent: "center", alignItems: "center" }} className="hover:text-sidebarText"
                 onMouseEnter={() => { setSocialIcon(socialHover) }} onMouseLeave={() => { setSocialIcon(social) }}
             >
-                <img src={socialIcon} className="h-10 w-10 mr-4" ></img>
-                <h1 className="font-InstagramSansBold text-2xl hover:shadow-lg">Socials</h1>
+                <img src={socialIcon} className="h-8 w-8 lg:h-12 lg:w-12 mr-4" ></img>
+                <h1 className="font-InstagramSansBold text-xl lg:text-2xl hover:shadow-lg">Socials</h1>
 
             </Stack>
             
