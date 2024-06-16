@@ -14,15 +14,18 @@ function PersonalInformation() {
                 />
             </div>
             <div className="flex flex-col justify-center w-full mt-8">
-                <div className="flex items-center justify-center md:justify-start">
+                <div className="flex items-center flex-col md:flex-row justify-center md:justify-start">
+                    <div className="flex flex-row">
                     <h1 className="font-InstagramSansBold text-xl lg:text-2xl text-white">
                         Wahaj Javed
                     </h1>
-                    <img src={verifiedBadge} alt="Verified Badge" />
-                    <button className="ml-4 text-white font-InstagramSansBold bg-verifiedBlue px-2 rounded-md">
+                    <img src={verifiedBadge} alt="Verified Badge" className="ml-2"/>
+                    </div>
+                    
+                    <button className="ml-4 text-white font-InstagramSansBold bg-verifiedBlue px-2 rounded-md mt-2 md:mt-0">
                         Following
                     </button>
-                    <button className="ml-4 text-white font-InstagramSansBold bg-verifiedRed px-2 rounded-md">
+                    <button className="ml-4 text-white font-InstagramSansBold bg-verifiedRed px-2 rounded-md mt-2 md:mt-0">
                         Going Super Saiyan
                     </button>
                 </div>
