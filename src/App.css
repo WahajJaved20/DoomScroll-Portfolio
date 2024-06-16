@@ -8,12 +8,19 @@
   src: local("InstagramSansBold"),
     url("./Fonts/InstagramSansBold.ttf") format("truetype");
 }
-
+@font-face {
+  font-family: "InstagramSans";   
+  src: local("InstagramSans"),
+    url("./Fonts/InstagramSans.ttf") format("truetype");
+}
 .font-Billabong {
   font-family: 'Billabong', sans-serif;
 }
 .font-InstagramSansBold{
   font-family: 'InstagramSansBold', sans-serif;
+}
+.font-InstagramSans{
+  font-family: 'InstagramSans', sans-serif;
 }
 .innerAvatar {
   border: 5px solid #1f6feb;

@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import Sidebar from "./Sidebar";
 import PersonalInformation from "./HomePage/PersonalInformation";
+import Projects from "./Projects";
 
 function WebView() {
     return <>
@@ -11,6 +12,7 @@ function WebView() {
             </Grid>
             <Grid item xs={9} className="h-screen pt-24" >
                 <PersonalInformation />
+                <Projects />
             </Grid>
         </Grid>
     </>

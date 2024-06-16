@@ -13,7 +13,8 @@ export default {
       },
       fontFamily: {
         Billabong: ['Billabong', 'sans-serif'],
-        InstagramSansBold: ['InstagramSansBold', 'sans-serif']
+        InstagramSansBold: ['InstagramSansBold', 'sans-serif'],
+        InstagramSans: ['InstagramSans', 'sans-serif']
       },
       textColor:{
         "verifiedBlue": "#1f6feb",

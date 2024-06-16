@@ -8,4 +8,10 @@ import social from "./circle-nodes-solid.svg"
 import socialHover from "./circle-nodes-solid-hover.svg"
 import profilePicture from "./profilePicture.jpg"
 import verifiedBadge from "./verified-badge.svg"
-export  {code, codeHover, globe, globeHover, certificate, certificateHover, social, socialHover, profilePicture, verifiedBadge};
+import ivms from "./ivms.png"
+import heart from "./heart-regular.svg"
+import heartClick from "./heart-solid.svg"
+import comment from "./comment-regular.svg"
+import share from "./link-solid.svg"
+import save from "./bookmark-regular.svg"
+export  {code, heart, save, heartClick, share, comment, codeHover, globe, globeHover, certificate, certificateHover, social, socialHover, profilePicture, verifiedBadge, ivms};
