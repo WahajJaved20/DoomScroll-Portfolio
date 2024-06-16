@@ -3,6 +3,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import PersonalInformation from "./HomePage/PersonalInformation";
 import Projects from "./Projects";
+import Experience from "./Experience";
 
 function WebView() {
     return <>
@@ -12,7 +13,8 @@ function WebView() {
             </Grid>
             <Grid item xs={9} className="h-screen pt-24" >
                 <PersonalInformation />
-                <Projects />
+                {/* <Projects /> */}
+                <Experience />
             </Grid>
         </Grid>
     </>
